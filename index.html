@@ -1,0 +1,406 @@
+<script type="text/javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script><script type="text/javascript">
+        var gk_isXlsx = true;
+        var gk_xlsxFileLookup = {"УЗ.xlsx":true};
+        var gk_fileData = {"УЗ.xlsx":"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"};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!-- Setting up the HTML structure with necessary CDN scripts for React, Recharts, and data parsing -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Звіт про продажі кави</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.8.1/prop-types.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.2/babel.min.js"></script>
+  <script src="https://unpkg.com/papaparse@latest/papaparse.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chrono-node/1.3.11/chrono.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recharts/2.15.0/Recharts.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <div id="root" class="container mx-auto p-6"></div>
+
+  <!-- Defining the React application with JSX for data visualization -->
+  <script type="text/babel">
+    const { createRoot } = ReactDOM;
+    const root = createRoot(document.getElementById('root'));
+
+    // Utility function for numerical abbreviation
+    const abbreviateNumber = (num) => {
+      if (isNaN(num) || num === null) return '';
+      if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+      if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+      return num.toString();
+    };
+
+    // Utility function to convert Excel serial date to readable format
+    const excelDateToString = (serial) => {
+      const baseDate = new Date(1900, 0, 1);
+      // Коригування для помилки високосного року в Excel
+      const date = new Date(baseDate.getTime() + (serial - (serial > 60 ? 1 : 0)) * 24 * 60 * 60 * 1000);
+      return date.toLocaleDateString('uk-UA', { month: 'short', year: 'numeric' });
+    };
+
+    // Main App component
+    const App = () => {
+      const [data, setData] = React.useState(null);
+      const [loading, setLoading] = React.useState(true);
+      const [selectedSections, setSelectedSections] = React.useState([]);
+      const [selectedProducts, setSelectedProducts] = React.useState([]);
+      const [selectedPeriod, setSelectedPeriod] = React.useState('all');
+
+      // Load and process CSV data
+      React.useEffect(() => {
+        const csv = loadFileData("УЗ.xlsx");
+        Papa.parse(csv, {
+          header: true,
+          skipEmptyLines: true,
+          dynamicTyping: false,
+          transformHeader: (header) => header.trim().replace(/^"|"$/g, ''),
+          transform: (value, header) => value.trim().replace(/^"|"$/g, ''),
+          complete: (results) => {
+            const cleanedData = processAndCleanData(results.data);
+            setData(cleanedData);
+            setSelectedSections([...new Set(cleanedData.map(row => row['Дільниця']))]);
+            setSelectedProducts([...new Set(cleanedData.map(row => row['Продукт']))]);
+            setLoading(false);
+          },
+          error: (err) => {
+            console.error(err);
+            setLoading(false);
+          },
+        });
+      }, []);
+
+      // Process and clean data
+      const processAndCleanData = (rawData) => {
+        return rawData.map(row => {
+          const cleanedRow = {};
+          Object.keys(row).forEach(key => {
+            let value = row[key];
+            if (key === 'Дільниця' || key === 'Продукт') {
+              cleanedRow[key] = value || '';
+            } else {
+              const num = parseFloat(value);
+              cleanedRow[key] = isNaN(num) ? 0 : num;
+            }
+          });
+          return cleanedRow;
+        }).filter(row => row['Дільниця'] && row['Продукт']);
+      };
+
+      // Calculate trends and statistics
+      const calculateTrends = () => {
+        if (!data) return { bySection: [], totalStats: {}, dateColumns: [] };
+
+        const dateColumns = Object.keys(data[0])
+          .filter(key => !isNaN(parseInt(key)))
+          .filter(date => {
+            const parsedDate = new Date(1900, 0, 1).getTime() + parseInt(date) * 24 * 60 * 60 * 1000;
+            const month = new Date(parsedDate).getMonth();
+            const year = new Date(parsedDate).getFullYear();
+            if (selectedPeriod === 'all') return true;
+            if (selectedPeriod === 'q1') return month >= 0 && month <= 2;
+            if (selectedPeriod === 'q2') return month >= 3 && month <= 5;
+            if (selectedPeriod === 'q3') return month >= 6 && month <= 8;
+            if (selectedPeriod === 'q4') return month >= 9 && month <= 11;
+            if (selectedPeriod === '2024') return year === 2024;
+            if (selectedPeriod === '2025') return year === 2025;
+            return true;
+          });
+
+        const filteredData = data.filter(row =>
+          selectedSections.includes(row['Дільниця']) &&
+          selectedProducts.includes(row['Продукт'])
+        );
+
+        const bySection = {};
+        filteredData.forEach(row => {
+          const section = row['Дільниця'];
+          const product = row['Продукт'];
+          const key = `${section}_${product}`;
+          if (!bySection[key]) {
+            bySection[key] = { section, product, sales: [], trend: 'neutral' };
+          }
+
+          // Змінено: додаємо тільки ненульові значення
+          dateColumns.forEach(date => {
+            const value = row[date] || 0;
+            if (value > 0) { // Додаємо лише ненульові значення
+              bySection[key].sales.push({ date: excelDateToString(date), value });
+            }
+          });
+
+      const salesValues = bySection[key].sales.map(item => item.value);
+if (salesValues.length >= 2) {
+
+      // Розрахунок середнього значення всіх продажів
+      const average = salesValues.reduce((sum, value) => sum + value, 0) / salesValues.length;
+
+      // Отримання останнього значення
+      const last = salesValues[salesValues.length - 1];
+
+      // Визначення тренду:
+      // - якщо останнє значення вище середнього на 5% і більше - позитивний тренд
+      // - якщо нижче середнього на 5% і більше - негативний тренд
+      // - в інших випадках - нейтральний
+      const threshold = 0.05; // 5% поріг для визначення тренду
+
+      if (last >= average * (1 + threshold)) {
+        bySection[key].trend = 'positive';
+      } else if (last <= average * (1 - threshold)) {
+        bySection[key].trend = 'negative';
+      } else {
+        bySection[key].trend = 'neutral';
+      }
+
+      // Додаємо середнє значення до об'єкту даних для можливого відображення
+      bySection[key].average = average;
+}
+
+          // Розрахунок тренду на основі ненульових значень
+          //const salesValues = bySection[key].sales.map(item => item.value);
+          //if (salesValues.length >= 2) {
+           // const first = salesValues[0];
+          //  const last = salesValues[salesValues.length - 1];
+          //  bySection[key].trend = last > first ? 'positive' : last < first ? 'negative' : 'neutral';
+         // }
+        });
+
+        const totalStats = {
+          totalSales: filteredData.reduce((sum, row) => {
+            return sum + dateColumns.reduce((s, date) => s + (row[date] || 0), 0);
+          }, 0),
+          avgSalesPerDay: dateColumns.length
+            ? filteredData.reduce((sum, row) => {
+                return sum + dateColumns.reduce((s, date) => s + (row[date] || 0), 0);
+              }, 0) / dateColumns.length
+            : 0,
+          topSection: Object.values(bySection).reduce((top, curr) => {
+            const total = curr.sales.reduce((sum, s) => sum + s.value, 0);
+            return !top || total > top.total ? { name: curr.section, total } : top;
+          }, null),
+        };
+
+        // Group sections by type
+        const groupedByType = {};
+        Object.values(bySection).forEach(item => {
+          const type = item.section.includes('депо') ? 'Депо' :
+                       item.section.includes('дільниця') ? 'Дільниці' : 'Інші';
+          if (!groupedByType[type]) groupedByType[type] = [];
+          groupedByType[type].push(item);
+        });
+
+        return { bySection: groupedByType, totalStats, dateColumns };
+      };
+
+      const { bySection, totalStats, dateColumns } = calculateTrends();
+
+      // Handle filter changes
+      const handleSectionChange = (section) => {
+        setSelectedSections(prev =>
+          prev.includes(section)
+            ? prev.filter(s => s !== section)
+            : [...prev, section]
+        );
+      };
+
+      const handleProductChange = (product) => {
+        setSelectedProducts(prev =>
+          prev.includes(product)
+            ? prev.filter(p => p !== product)
+            : [...prev, product]
+        );
+      };
+
+      const handlePeriodChange = (period) => {
+        setSelectedPeriod(period);
+      };
+
+      // Render loading state
+      if (loading) {
+        return (
+          <div className="text-center text-2xl text-gray-600 py-10">
+            Завантаження даних...
+          </div>
+        );
+      }
+
+
+
+      // Render report
+      return (
+        <div className="bg-white shadow-lg rounded-lg p-8">
+          {/* Report header */}
+          <h1 className="text-3xl font-bold text-center mb-6 text-blue-800">
+            Звіт про продажі кави на дільницях УЗ
+          </h1>
+
+          {/* Filters */}
+          <div className="mb-8">
+            <h2 className="text-xl font-semibold mb-4 text-gray-800">Фільтри</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+              {/* Section filter */}
+              <div>
+                <h3 className="text-lg font-medium mb-2">Дільниці</h3>
+                {[...new Set(data.map(row => row['Дільниця']))].map(section => (
+                  <div key={section} className="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={selectedSections.includes(section)}
+                      onChange={() => handleSectionChange(section)}
+                      className="mr-2"
+                    />
+                    <label className="text-sm text-gray-700">{section}</label>
+                  </div>
+                ))}
+              </div>
+              {/* Product filter */}
+              <div>
+                <h3 className="text-lg font-medium mb-2">Продукти</h3>
+                {[...new Set(data.map(row => row['Продукт']))].map(product => (
+                  <div key={product} className="flex items-center">
+                    <input
+                      type="checkbox"
+                      checked={selectedProducts.includes(product)}
+                      onChange={() => handleProductChange(product)}
+                      className="mr-2"
+                    />
+                    <label className="text-sm text-gray-700">{product}</label>
+                  </div>
+                ))}
+              </div>
+              {/* Period filter */}
+              <div>
+                <h3 className="text-lg font-medium mb-2">Період</h3>
+                {[
+                  { value: 'all', label: 'Весь період' },
+                  { value: 'q1', label: '1-й квартал (Січ-Бер)' },
+                  { value: 'q2', label: '2-й квартал (Кві-Чер)' },
+                  { value: 'q3', label: '3-й квартал (Лип-Вер)' },
+                  { value: 'q4', label: '4-й квартал (Жов-Гру)' },
+                  { value: '2024', label: '2024 рік' },
+                  { value: '2025', label: '2025 рік' },
+                ].map(period => (
+                  <div key={period.value} className="flex items-center">
+                    <input
+                      type="radio"
+                      name="period"
+                      value={period.value}
+                      checked={selectedPeriod === period.value}
+                      onChange={() => handlePeriodChange(period.value)}
+                      className="mr-2"
+                    />
+                    <label className="text-sm text-gray-700">{period.label}</label>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Summary statistics */}
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold mb-4 text-gray-800">Загальна статистика</h2>
+            <p className="text-lg text-gray-700">
+              Загальний обсяг продажів: <span className="font-bold">{abbreviateNumber(totalStats.totalSales)}</span> одиниць
+            </p>
+            <p className="text-lg text-gray-700">
+              Середній обсяг продажів на місяць: <span className="font-bold">{abbreviateNumber(Math.round(totalStats.avgSalesPerDay))}</span> одиниць
+            </p>
+            <p className="text-lg text-gray-700">
+              Найактивніша дільниця: <span className="font-bold">{totalStats.topSection?.name || 'Немає даних'}</span> з {abbreviateNumber(totalStats.topSection?.total || 0)} одиниць
+            </p>
+
+          </div>
+
+          {/* Charts grouped by type */}
+          {Object.keys(bySection).map(type => (
+            <div key={type} className="mb-8">
+              <h2 className="text-2xl font-semibold mb-4 text-gray-800">{type}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {bySection[type].map((section, index) => (
+                  <div key={index} className="bg-gray-50 p-4 rounded-lg shadow">
+                    <h3 className="text-xl font-semibold mb-4 text-gray-800">
+                      {section.section} - {section.product}
+                    </h3>
+                    <p className="text-sm mb-2">
+                      Тренд: <span className={section.trend === 'positive' ? 'text-green-600' : section.trend === 'negative' ? 'text-red-600' : 'text-gray-600'}>
+                        {section.trend === 'positive' ? 'Зростання' : section.trend === 'negative' ? 'Спад' : 'Стабільно'}
+                      </span>
+                    </p>
+                    <Recharts.ResponsiveContainer width="100%" height={300}>
+                      <Recharts.LineChart data={section.sales}>
+                        <Recharts.CartesianGrid strokeDasharray="3 3" />
+                        <Recharts.XAxis dataKey="date" tick={{ fontSize: 12 }} />
+                        <Recharts.YAxis
+                          tickFormatter={abbreviateNumber}
+                          tick={{ fontSize: 12 }}
+                          domain={['auto', 'auto']}
+                        />
+                        <Recharts.Tooltip formatter={(value) => abbreviateNumber(value)} />
+                        <Recharts.Line
+                          type="monotone"
+                          dataKey="value"
+                          stroke={section.trend === 'positive' ? '#22c55e' : section.trend === 'negative' ? '#ef4444' : '#6b7280'}
+                          strokeWidth={2}
+                          connectNulls={true}
+                          dot={{ r: 4, strokeWidth: 2, fill: '#fff' }}
+                          activeDot={{ r: 6 }}
+                        />
+                      </Recharts.LineChart>
+                    </Recharts.ResponsiveContainer>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          {/* Примітка про нульові значення */}
+          <div className="text-sm text-gray-500 mt-4">
+
+          </div>
+
+        </div>
+      );
+    };
+
+    root.render(<App />);
+  </script>
+</body>
+</html>
